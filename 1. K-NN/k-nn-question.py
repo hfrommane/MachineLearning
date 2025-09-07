@@ -19,3 +19,6 @@ data = {
 
 # Create DataFrame
 df = pd.DataFrame(data)
+
+# Set figure size
+plt.figure(figsize=(8.4, 6))
