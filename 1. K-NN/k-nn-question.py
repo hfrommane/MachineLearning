@@ -16,3 +16,6 @@ data = {
     '# of hugs': [104, 100, 81, 10, 5, 2, 90],
     'Movie Type': ['Romance', 'Romance', 'Romance', 'Action', 'Action', 'Action', 'Unknown']
 }
+
+# Create DataFrame
+df = pd.DataFrame(data)
