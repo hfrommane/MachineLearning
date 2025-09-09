@@ -22,3 +22,8 @@ df = pd.DataFrame(data)
 
 # Set figure size
 plt.figure(figsize=(8.4, 6))
+
+# Group by movie genre and plot separate scatter plots
+romance_mask = df['Movie Type'] == 'Romance'
+action_mask = df['Movie Type'] == 'Action'
+unknown_mask = df['Movie Type'] == 'Unknown'
