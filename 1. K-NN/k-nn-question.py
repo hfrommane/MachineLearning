@@ -27,3 +27,10 @@ plt.figure(figsize=(8.4, 6))
 romance_mask = df['Movie Type'] == 'Romance'
 action_mask = df['Movie Type'] == 'Action'
 unknown_mask = df['Movie Type'] == 'Unknown'
+
+plt.scatter(
+    df.loc[romance_mask, '# of kicks'],
+    df.loc[romance_mask, '# of hugs'],
+    color='blue',
+    label='Romance'
+)
