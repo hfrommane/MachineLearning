@@ -34,3 +34,10 @@ plt.scatter(
     color='blue',
     label='Romance'
 )
+
+plt.scatter(
+    df.loc[action_mask, '# of kicks'],
+    df.loc[action_mask, '# of hugs'],
+    color='green',
+    label='Action'
+)
