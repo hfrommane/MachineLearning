@@ -48,3 +48,13 @@ plt.scatter(
     color='red',
     label='Unknown'
 )
+
+# Add annotations for each point, and set offsets to avoid overlaps.
+for i in range(len(df)):
+    plt.annotate(
+        df.loc[i, 'Movie title'],
+        (df.loc[i, '# of kicks'], df.loc[i, '# of hugs']),
+        xytext=(6, -3),  # Position the annotation text 5 pixels above and to the right of each scatter point.
+        textcoords='offset points',
+        fontsize=9
+    )
