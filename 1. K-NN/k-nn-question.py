@@ -58,3 +58,10 @@ for i in range(len(df)):
         textcoords='offset points',
         fontsize=9
     )
+
+# Set the title and axis labels
+plt.title('Classifying Movies by the Number of Kicks and Hugs', fontsize=14)
+plt.xlabel('Number of Kicks in the Movie', fontsize=12)
+plt.ylabel('Number of Hugs in the Movie', fontsize=12)
+# plt.grid(True)
+plt.legend()
