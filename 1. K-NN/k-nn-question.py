@@ -65,3 +65,6 @@ plt.xlabel('Number of Kicks in the Movie', fontsize=12)
 plt.ylabel('Number of Hugs in the Movie', fontsize=12)
 # plt.grid(True)
 plt.legend()
+
+# plt.show()
+plt.savefig('movies_kicks_hugs_plot.png', dpi=600)
